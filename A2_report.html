@@ -26,7 +26,7 @@
 					<ul>
 						In the MAPC report, "Homes for Profit," MAPC finds that investor flips resell for signficantly more than
 						non investors. Oftentimes, flips are framed as just "greedy profits." Thus, I'm curious as to how much of the 
-						resale premium comes from neighborhood wide price movement (market timing/greedy profit) in comparison to property
+						resale premium comes from market wide price movement (market timing/greedy profit) in comparison to property
 						specific value addition (renovation).
 					</ul>
 				</li>
@@ -47,13 +47,6 @@
 						whether speculation is directly shaping the market or just simply responding to it.
 					</ul>
 				</li>
-				<li> Is there a threshold level of corporate ownership after which, owner occupancy rates in a neighborhood fail to recover?
-					<ul>
-						With this question, I more so want to investigate the very long term effects of speculation on neighborhoods. While the articles show the current
-						data trends, I'm curious about the current overall effect thus far. I want to see whether neighborhoods seem to permanently shift to rental structures
-						comapred to ownership.
-					</ul>
-				</li>
 			</ol>
 		</section>
 
@@ -61,72 +54,64 @@
 			<h2>Discoveries & Insights</h2>
 
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="median_city_sale_growth.png" alt="" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+				To peel off the layers of our heavy first question, we first want to ask in the first place, "how does the market move?" For our purposes and given data, we'll treat
+				the city as our overall market. We first find the median sale price in each year, then we can see how that median sale price changes per year reflecting our market movement.
+				Our graph follows what we would expect: relatively strong and stable growth except for dips around the financial crises around 2008 and 2020. Thus, knowing how our market moves,
+				we want to ask the follow up, "how much do different investor types profit above this normal market growth, implying signficant renovation/value addition?" This leads us to our next
+				visualization.
 				</figcaption>
 			</figure>
 
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="excess_return_by_investor_type_and_year.png" alt="" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+				We use our market movement/growth prediction from the previous visualization and compare it to Price Diff Pch (the percentage change in the price of a property between consecutive transactions) and 
+				adjust our data for the flip period and year to find our metric excess return that measures how much we exceeded market expectations and filter for positive values. A large excess return would imply
+				property specific value addition and renovation. We split this data up by investor types to answer our question. Interestingly, we find that insitutional investors actually generate the largest excess returns
+				in comparison to other investor types. Does this imply that institutional investors actually heavily contribute to property specific value addition?
 				</figcaption>
 			</figure>
 
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="excess_return_NO_OUTLIER.png" alt="" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+				Absolutely NOT! The astute will notice the huge outlier that insitutional investors had in 2020. With the extremely volatile and unpredictable market conditions during that time, it makes sense that
+				this point is an outlier. Removing this outlier paints an entirely different picture; It seems that the excess return of instiutional investors is not out of the ordinary at all. In fact, it even looks to be 
+				among the lowest, painting the picture that institutional investors contribute among the least to property specific value addition and renovation. I'm quite curious about the specific circumstances that caused
+				2020 to be such a huge outlier, and look forward to investigating this in the future.
 				</figcaption>
 			</figure>
 
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="corporate_ownership_growth.png" alt="" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+				Observing the growth of corporate ownership rates over the years, we observe an interesting pattern. Contrary to narratives of widespread post Great Recession corporate accumulation, Boston does not exhibit a sharp 
+				acceleration in corporate ownership growth immediately following 2008. Instead, a large spike in corporate expansion is observed in 2020. We also observe that the growth of corporate ownership in Boston has been positive
+				every year in the past 20 years except for 2009. These observations complicate the narrative pushed by the ProPublica article, as while corporate ownership has consistently been increasing, it isn't completely clear that the 
+				Great Recession marked a structural turning point in Boston's housing market. The data suggests a more persistent upwards trend in corporate ownership, potentially a response to modern financial conditions more than a takeover during
+				crises. In other words, Boston's experience appears less like a crisis driven takeover and more like a steady long-term restructuring of ownership, with 2020 representing a sharper inflection point than 2008. I wonder, how has the owner
+				occupancy rate also changed in response to this trend?
 				</figcaption>
 			</figure>
 
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="change_in_owner_occ_rate.png" alt="" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+				The change in owner occupancy rate mirrors what we've observed above, with owner occupancy persistently in a downtrend more so that any immediate spikes. Interestingly, there is a positive spike around 2007/2008 which actually ligns up with
+				my anecdotal evidence of my mom finally being able to afford a home during the 2008 financial crisis!
 				</figcaption>
 			</figure>
 
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="corp_own_vs_price.png" alt="" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
-				</figcaption>
-			</figure>
-
-			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
-				<figcaption>
-				ENTER IMAGE CAPTION HERE.
-				</figcaption>
-			</figure>
-
-			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
-				<figcaption>
-				ENTER IMAGE CAPTION HERE.
-				</figcaption>
-			</figure>
-
-			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
-				<figcaption>
-				ENTER IMAGE CAPTION HERE.
-				</figcaption>
-			</figure>
-
-			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
-				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+				Overlaying corporate ownership growth over citywide price growth, there really does not seem to be any consistent pattern of corporate expansion before major price appreciation. For the most part, corporation expansion seems
+				to move in tandem with citywide price growth, with exceptions around 2013 and 2020. In 2013, corporations look to have expanded heavily before a short period of heavy price growth. However, this price growth was sustained for half 
+				a decade, which makes it difficult to draw conclusions about speculation. In 2020, corporate ownership growth surged ahead of a sharp slowdown in price growth in 2021. This weakens the hypothesis of corporations systematically purchasing
+				properties in anticipation of immediate appreciation and instead implies that corporate expansion may more so be responsive to broader economic conditions such as during the COVID-19 crisis in 2020. I'm curious as to how the trends continue
+				past 2022, as we can further draw conclusions based on whether the lines "resync." However, we do not currently have that data.
 				</figcaption>
 			</figure>
 		</section>
@@ -134,7 +119,11 @@
 		<section>
 			<h2>Summary</h2>
 
-			<p>WRITE FINAL SUMMARY HERE.</p>
+			<p>The data suggests that while the narratives presented in the articles contain elements of truth, the reality of Boston's housing market is more nuanced. For example, institutional flip profits do appear to be driven more by broader market timing
+				 than by substantial renovation driven value addition. In opposition, the narrative around a dramatic shift in corporate ownership starting from the 2008 recession is more fuzzy. While corporate ownership has steadily increased over time, but there is 
+				 little evidence of a dramatic post 2008 takeover. Instead, 2020 marks a more noticeable inflection point. Additionally, corporate ownership growth does not consistently precede price appreciation, weakening the argument that corporations systematically 
+				 drive speculative price booms. Overall, the trends point less to sudden crisis driven takeovers and more to a gradual structural shift in ownership patterns shaped by broader macroeconomic factors.
+			</p>
 		</section>
 	</main>
 </body>
